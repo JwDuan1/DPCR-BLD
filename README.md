@@ -59,7 +59,7 @@ Once you have this comprehensive list, create a lookup table to map these variat
 
 Example lookup table structure:
 
-| Standard Name | Alternative 1 | Alternative 2 | Alternative 3 |
+| Standard Name |  | |   |
 |--------------|--------------|---------------|---------------|
 | Brainstem    | Brain_Stem   | BrainStem     | Brain stem    |
 | Parotid_L    | Lt_Parotid   | Parotid Lt    | L Parotid     |
