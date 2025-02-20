@@ -237,9 +237,9 @@ The function will:
 The DR-BLD toolkit includes Python-based visualization tools for comprehensive 3D medical data analysis. These tools provide specialized visualization of disagreements data with customizable colormaps and 3D coordinate systems.
 1.**Local Disagreement Analysis**
 ```python
-from medical_visualization import process_directory
+colormapMultiFigmmRawData.py
 
-# Process detected outlier files
+# Process mean BLD files
 process_directory(
     directory="path/to/data/BiasesResult",
     pattern="_Brainstem_Result*.csv"
@@ -252,9 +252,9 @@ Features:
 
 2. **Standard Deviation Analysis**
 ```python
-from medical_visualization import process_directory
+colormapMultiFigmmRawData.py
 
-# Process standard deviation files
+# Process standard deviation BLD files
 process_directory(
     directory="path/to/data/BiasesResult",
     pattern="_Brainstem-std_Result*.csv"
@@ -267,7 +267,8 @@ Features:
 
 3. **Statistical Outlier Visualization**
 ```python
-from medical_visualization import process_directory
+colormapMultiFigmmRawData.py
+
 # Process detected outlier files
 process_directory(
     directory="path/to/data/DetectedError",
