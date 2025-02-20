@@ -1,5 +1,12 @@
 # DR-BLD
 Deformable Registration-Based Bidirectional Local Distance (DR-BLD): A Methodology for Systematic Evaluation and Visualization of Local Disagreements in Clinical Auto-Contouring
+
+## Authors
+
+- Jingwei Duan, Ph.D.
+- Quan Chen, Ph.D.
+
+
 ## Overview
 
 This repository provides a comprehensive toolkit for systematically evaluating local disagreements in auto-segmentation. The DR-BLD methodology enables detailed analysis of contour differences, making it particularly valuable for validating and improving auto-contouring systems in clinical settings.
@@ -36,12 +43,19 @@ Each file should contain the contours you want to analyze
   - Image Processing Toolbox
   - Computer Vision Toolbox
   - Statistics and Machine Learning Toolbox
+    
+## Key Functions
+- `filterPatientStName.m`: Structure set organization
+- `orgStudyList.m`: Structure name matching
+- `BLD_Batch.m`: Main function for batch processing contour comparisons
+- `BLDMatchViaDCPR.m`: Advanced registration and analysis
+- `f_BLD_visualization.m`: Visualization tools for results
 
 
 ## Usage
 
 ### Basic Workflow
-0.### Creating the Lookup Table
+0. **Creating the Lookup Table**
 Different institutions and physicians may use varying names for the same anatomical structures. The workflow includes tools to help you identify and organize these variations:
 
 First, use the structure name filtering tool to identify all structure names in your dataset:
@@ -298,12 +312,6 @@ f_BLD_visualization('./DIRMatchdata/case1.mat', ...
   - Local disagreement patterns
 - Custom colormap generation for visualization
 
-## Key Functions
-- `filterPatientStName.m`: Structure set organization
-- `orgStudyList.m`: Structure name matching
-- `BLD_Batch.m`: Main function for batch processing contour comparisons
-- `BLDMatchViaDCPR.m`: Advanced registration and analysis
-- `f_BLD_visualization.m`: Visualization tools for results
 
 
 ## Output Files
@@ -323,10 +331,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Authors
-
-- Jingwei Duan, Ph.D.
-- Quan Chen, Ph.D.
 
 ## Citation
 
