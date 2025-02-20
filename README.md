@@ -6,14 +6,18 @@ This repository provides a comprehensive toolkit for systematically evaluating l
 
 ## Features
 
-- Bidirectional Local Distance (BLD) calculation between reference and test contours
-- Point cloud registration and comparison using Coherent Point Drift (CPD)
-- Automated quality metrics calculation including:
+
+- Automated geometric metrics calculation including:
   - Dice similarity coefficient
   - Hausdorff distance
   - Surface Dice
   - Center of mass distance
   - Mean surface distance
+- DR-BLD provides a mechanism to spatially identify local contour differences between two contour sets. 
+  ![image](https://github.com/user-attachments/assets/867fb05e-a321-43b4-8321-b7406109016b)
+
+- It can be used for contour outlier detection. 
+  ![image](https://github.com/user-attachments/assets/779217b2-eff1-4a6b-8789-1a79cfbd5d88)
 
 ## Prerequisites
 
