@@ -48,7 +48,7 @@ Each file should contain the contours you want to analyze
 - `filterPatientStName.m`: Structure set organization
 - `orgStudyList.m`: Structure name matching
 - `BLD_Batch.m`: Main function for batch processing contour comparisons
-- `BLDMatchViaDCPR.m`: Main function for deformable registration and analysis
+- `BLDMatchViaDCPR.m`: Main function for deformable registration, analysis, and outlier detection
 - `colormapMultiFigmmRawData.py`: Visualization tools for systematic results
 - `f_BLD_visualization.m`: Visualization tools for individual cases
 
