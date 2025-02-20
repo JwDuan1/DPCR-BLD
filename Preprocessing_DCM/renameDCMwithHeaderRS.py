@@ -1,3 +1,26 @@
+"""
+DICOM Structure Set File Processor
+--------------------------------
+
+This script processes DICOM structure set files (RS*.dcm) and renames them based on their DICOM tags.
+The new filename format is: PatientID_StructureSetLabel_RouteID_Date_Time.dcm
+
+Features:
+- Recursively finds all DICOM files in a directory
+- Processes only structure set files (starting with 'RS')
+- Renames files based on DICOM tags
+- Maintains detailed logging
+- Handles invalid characters in filenames
+- Provides processing statistics
+
+Dependencies:
+- pydicom
+- Python 3.6+
+
+Author: Jingwei Duan Ph.D.
+Date: February 2025
+"""
+
 import os
 import glob
 import logging
