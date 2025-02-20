@@ -57,6 +57,7 @@ Each file should contain the contours you want to analyze
 
 ### Basic Workflow
 0. **Creating the Lookup Table**
+
 Different institutions and physicians may use varying names for the same anatomical structures. The workflow includes tools to help you identify and organize these variations:
 
 First, use the structure name filtering tool to identify all structure names in your dataset:
