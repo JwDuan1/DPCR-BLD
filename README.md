@@ -328,7 +328,7 @@ f_BLD_visualization(referenceFile, templateFile, countthreshold, pythonpath);
 ```
 Parameters:
 - `referenceFile`: Path to .mat file containing reference contour data
-- `templateFile`: Path to .mat file containing template contour data
+- `templateFile`: Path to OAR_MRN-Ref.mat file containing template contour data
 - `countthreshold`: (Optional) Maximum point count before downsampling (default: 5000)
 - `pythonpath`: (Optional) Path to Python executable for colormap generation
 
@@ -336,11 +336,11 @@ Example usage:
 ```matlab
 % Basic usage with default parameters
 f_BLD_visualization('./DIRMatchdata/case1.mat', ...
-                   './output/_Ref/Brainstem_template.mat');
+                   './output/_Ref/Brainstem_MRN-Ref.mat');
 
 % Custom parameters
 f_BLD_visualization('./DIRMatchdata/case1.mat', ...
-                   './output/_Ref/Brainstem_template.mat', ...
+                   './output/_Ref/Brainstem_MRN-Ref.mat', ...
                    3000, ...
                    'C:/Python37/python.exe');
 ```
