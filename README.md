@@ -236,7 +236,7 @@ The function will:
 5. **Visualization**
 
 The DR-BLD toolkit includes Python-based visualization tools for comprehensive 3D medical data analysis. These tools provide specialized visualization of disagreements data with customizable colormaps and 3D coordinate systems.
-1.**Local Disagreement Analysis**
+a.**Local Disagreement Analysis**
 ```python
 colormapMultiFigmmRawData.py
 
@@ -251,7 +251,7 @@ Features:
 - Symmetric range based on 2nd and 98th percentiles
 - Visualizes areas of systematic disagreement 
 
-2. **Standard Deviation Analysis**
+b. **Standard Deviation Analysis**
 ```python
 colormapMultiFigmmRawData.py
 
@@ -266,7 +266,7 @@ Features:
 - Symmetric range based on 2nd and 98th percentiles
 - Highlights variation in contour agreement
 
-3. **Statistical Outlier Visualization**
+c. **Statistical Outlier Visualization**
 ```python
 colormapMultiFigmmRawData.py
 
