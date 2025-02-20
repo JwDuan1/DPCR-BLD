@@ -97,21 +97,59 @@ Guidelines for the lookup table:
 
 
 1. **Organize Structure Sets**
-% Match structure names
-orgStudyList('input/ref_folder/', 'lookup.csv', 'reflist.csv');
-orgStudyList('input/test_folder/', 'lookup.csv', 'testlist.csv');
+
+After creating your lookup table, organize your structure sets by matching structure names:
+
+```matlab
+% Process reference contours 
+orgStudyList('../input/reference_data/', 'structure_lookup.csv', 'reflist.csv');
+
+% Process test/AI contours
+orgStudyList('../input/test_data/', 'structure_lookup.csv', 'testlist.csv');
 ```
+
+This step will:
+- Match structure names using your lookup table
+- Create organized lists of matched structures
+- Handle variations in structure naming
+- Generate CSV files for next step
 
 
 2. **Calculate BLD Metrics**
+
+Use BLD_Batch to compute Bidirectional Local Distance metrics between reference and test contours:
+
 ```matlab
 % Compare reference and test contours
-BLD_Batch('reflist.csv', 'testlist.csv', 'results.csv', './output/', '');
+BLD_Batch('reflist.csv',         % Reference contour list
+          'testlist.csv',        % Test contour list
+          'results.csv',         % Output metrics file
+          './output/BLD/',       % Output directory for BLD data
+          '');                   % Optional Windows path prefix
 ```
+
+Output structure:
+```
+output/
+└── BLD/
+    ├── OARname_MRN1.mat    # BLD data for case 1
+    ├── OARname_MRN2.mat    # BLD data for case 2
+ └── results.csv         # Summary metrics
+```
+
+The BLD calculation:
+- Computes bidirectional distances between contour pairs
+- Creates MAT files needed for subsequent analysis
+- Provides comprehensive quality metrics including:
+  - Dice similarity coefficient
+  - Hausdorff distance
+  - Mean surface distance
+  - Surface Dice
+
 
 3. **Template Contour Selection**
 
-For each organ at risk (OAR), a clinically-approved segmentation must be selected as the template contour. This is a crucial step that requires careful review of contour representativeness by clinical experts.
+For each organ at risk (OAR), a clinically-approved segmentation **must be selected** as the template contour. This is a crucial step that requires careful review of contour representativeness by clinical experts.
 
 Setup instructions:
 ```
