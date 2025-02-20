@@ -70,8 +70,8 @@ Example lookup table structure:
 | Parotid_L    | Lt_Parotid   | Parotid Lt    | L Parotid     |
 | Parotid_R    | Rt_Parotid   | Parotid Rt    | R Parotid     |
 | SpinalCord   | Spinal_Cord  | Cord          |               |
-![image](https://github.com/user-attachments/assets/8ceec0cb-77a2-4ee0-a0ab-6dab7f3091d4)
 
+![image](https://github.com/user-attachments/assets/8ceec0cb-77a2-4ee0-a0ab-6dab7f3091d4)
 Guidelines for the lookup table:
 - Place the AI/auto-segmented structure names in the first column (these are typically consistent)
 - Add manual contour variations found in 'stnames.csv' in subsequent columns
