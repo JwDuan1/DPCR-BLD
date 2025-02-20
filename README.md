@@ -3,6 +3,7 @@ Deformable Registration-Based Bidirectional Local Distance (DR-BLD): A Methodolo
 ## Overview
 
 This repository provides a comprehensive toolkit for systematically evaluating local disagreements in auto-segmentation. The DR-BLD methodology enables detailed analysis of contour differences, making it particularly valuable for validating and improving auto-contouring systems in clinical settings.
+![Figure2_Workflow](https://github.com/user-attachments/assets/21e8317b-9595-4104-a952-0a4c33c3bc2e)
 
 ## Features
 
@@ -68,7 +69,8 @@ Example lookup table structure:
 | Brainstem    | Brain_Stem   | BrainStem     | Brain stem    |
 | Parotid_L    | Lt_Parotid   | Parotid Lt    | L Parotid     |
 | Parotid_R    | Rt_Parotid   | Parotid Rt    | R Parotid     |
-| SpinalCord   | Spinal_Cord  | Cord          | SC            |
+| SpinalCord   | Spinal_Cord  | Cord          |               |
+![image](https://github.com/user-attachments/assets/8ceec0cb-77a2-4ee0-a0ab-6dab7f3091d4)
 
 Guidelines for the lookup table:
 - Place the AI/auto-segmented structure names in the first column (these are typically consistent)
