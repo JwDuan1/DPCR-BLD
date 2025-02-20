@@ -72,6 +72,7 @@ Example lookup table structure:
 | SpinalCord   | Spinal_Cord  | Cord          |               |
 
 ![image](https://github.com/user-attachments/assets/8ceec0cb-77a2-4ee0-a0ab-6dab7f3091d4)
+
 Guidelines for the lookup table:
 - Place the AI/auto-segmented structure names in the first column (these are typically consistent)
 - Add manual contour variations found in 'stnames.csv' in subsequent columns
@@ -346,3 +347,4 @@ For questions and support, please open an issue in the GitHub repository.
 ## Acknowledgments
 
 Special thanks to contributors and researchers who have helped test and improve this toolkit.
+
