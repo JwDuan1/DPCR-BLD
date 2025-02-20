@@ -180,7 +180,7 @@ class DicomFileProcessor:
 
 def main():
     # Define the input folder
-    infolder = r'\\hnas1-dpts\Radiation Oncology\Physicists\Residents\Duan\Researches\Data\GithubTest\AI'
+    infolder = r'..\test\'
     
     # Create log file in the same directory as the script
     log_file = os.path.join(os.path.dirname(__file__), 'Rename_RSdicom_processing.log')
