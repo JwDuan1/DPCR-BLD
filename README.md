@@ -187,8 +187,8 @@ Provides comprehensive visualization of disagreement patterns
 
 Statistical Outlier Detection:
 
-Identifies major outliers (> 99% confidence interval)
-Detects minor outliers (> 95% confidence interval)
+Identifies major outliers ( more than 1% of the total number of points fell outside the 99% CI range)
+Detects minor outliers (more than 1% of the total number of points fell outside the 95% CI range)
 Highlights regions of systematic disagreement
 
 ```matlab
