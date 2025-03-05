@@ -352,7 +352,6 @@ def bld_match_via_dcpr(root_dir: str, oar_name: Optional[str] = None,
                                         logging.error(f"Registration failed: {str(e)}")
                                         rmse = -1  # Use -1 to indicate registration failure
                                         
-                                del ref_pts_with_bld, ref_mask, tst_mask  # Explicitly delete large objects
                                 gc.collect()
                                 QApplication.processEvents()
                                 # Write RMSE to file
