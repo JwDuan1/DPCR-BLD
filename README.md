@@ -9,7 +9,7 @@ Deformable Point Clould Registration-Based Bidirectional Local Distance (DPCR-BL
 
 ## Overview
 
-This repository provides a comprehensive toolkit for systematically evaluating local disagreements in auto-segmentation. The DR-BLD methodology enables detailed analysis of contour differences, making it particularly valuable for validating and improving auto-contouring systems in clinical settings.
+This repository provides a comprehensive toolkit for systematically evaluating local disagreements in auto-segmentation. The DPCR-BLD methodology enables detailed analysis of contour differences, making it particularly valuable for validating and improving auto-contouring systems in clinical settings.
 ![Figure2_Workflow](https://github.com/user-attachments/assets/21e8317b-9595-4104-a952-0a4c33c3bc2e)
 
 ## Features
