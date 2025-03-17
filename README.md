@@ -375,14 +375,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Citation
 
-If you use this toolkit in your research, please cite:
+If you find this toolkit is useful and use this in your research, please cite:
 ```
-@software{medical_contour_analysis,
-  author = {Duan, Jingwei and Chen, Quan},
-  title = {Medical Image Contour Analysis Toolkit},
-  year = {2025},
-  version = {1.0}
-}
+
 ```
 
 ## Support
